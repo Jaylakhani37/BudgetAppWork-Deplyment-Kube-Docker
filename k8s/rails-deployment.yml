@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: rails-app
-        image: your_docker_image_name:latest  # replace with your Docker image name
+        image: budget-app:latest  # replace with your Docker image name
+        imagePullPolicy: IfNotPresent
         env:
         - name: DATABASE_URL
           value: postgresql://postgres:password@postgres:5432/budget_app

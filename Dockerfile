@@ -1,5 +1,5 @@
 # Use Ruby as base image
-FROM ruby:2.7.4
+FROM ruby:3.1.2
 
 # Install NodeJS and Yarn for the asset pipeline
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
